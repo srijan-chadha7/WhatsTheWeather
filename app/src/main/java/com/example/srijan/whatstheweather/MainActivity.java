@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void getWeather(View view){
         DownloadTask task=new DownloadTask();
-        task.execute("https://openweathermap.org/data/2.5/weather?q="+editText.getText().toString()+"&appid=b6907d289e10d714a6e88b30761fae22");
+        task.execute("https://openweathermap.org/data/2.5/weather?q="+editText.getText().toString()+"&appid=");
     }
     public class DownloadTask extends AsyncTask<String,Void,String> {
 
